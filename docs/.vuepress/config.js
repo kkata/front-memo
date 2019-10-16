@@ -1,5 +1,13 @@
 
 module.exports = {
+  locales: {
+    '/': {
+      lang: 'ja',
+        head: [
+          ['meta',{ name:"robots", content:"noindex, nofollow"}]
+        ]
+    }
+  },
   themeConfig: {
     sidebar: [
       {
