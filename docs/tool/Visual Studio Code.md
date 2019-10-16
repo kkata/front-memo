@@ -24,7 +24,13 @@ VSCode上で `command + shifgt + p` を押して `shell command` と入れる
 
 ![](/tool.vscode2.png)
 
-### 現状のSetting.json
+### settings.jsonの開き方
+
+`command + ,` で設定のタブを開いて右側のアイコンから開ける
+
+![](/tool.vscode3.png)
+
+### 現状のsettings.json
 
 ```json
 {
@@ -48,6 +54,12 @@ VSCode上で `command + shifgt + p` を押して `shell command` と入れる
     "editor.dragAndDrop": false,
     "editor.autoIndent": false,
     "workbench.colorTheme": "Andromeda Bordered",
+    "workbench.colorCustomizations": {
+        "[Andromeda Bordered]": {
+            "editor.selectionHighlightBackground": "#ffff0070",
+            "editor.selectionBackground": "#00ff0040"
+        }
+    },
     "breadcrumbs.enabled": false,
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
@@ -56,4 +68,5 @@ VSCode上で `command + shifgt + p` を押して `shell command` と入れる
     "explorer.confirmDragAndDrop": false,
     "emmet.triggerExpansionOnTab": true
 }
+
 ```
