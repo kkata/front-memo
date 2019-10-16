@@ -1,11 +1,12 @@
 
 module.exports = {
+  head: [
+    ['meta',{ name:"robots", content:"noindex, nofollow"}]
+  ],
   locales: {
     '/': {
       lang: 'ja',
-        head: [
-          ['meta',{ name:"robots", content:"noindex, nofollow"}]
-        ]
+      description: 'Vue-powered Static Site Generator'
     }
   },
   themeConfig: {
@@ -21,5 +22,6 @@ module.exports = {
       }
     ],
     displayAllHeaders: true,
+    sidebarDepth: 2
   }
 }
