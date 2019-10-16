@@ -16,10 +16,14 @@
 - ターミナルのテーマ  
   [https://github.com/KeitaNakamura/neodark.vim](https://github.com/KeitaNakamura/neodark.vim)
 
+---
 
 - US配列キーボードの日本語入力環境設定  
   ![](/tool.keyboad1.png)
-  ![](/tool.keyboad2.png)
+  
+- caps lookキーをcontrolキーに変更  
+  システム環境設定 > キーボード > “キーボード”タブ > “修飾キー...”ボタン
+    ![](/tool.keyboad3.png)
 
 ## アプリ
 - [Quick Look plugins](https://github.com/sindresorhus/quick-look-plugins)
