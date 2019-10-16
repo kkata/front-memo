@@ -9,6 +9,31 @@ $ ssh-keygen -t rsa
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
+## submoduleのコンフリクト解消
+
+こうなった場合
+
+```
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+  both modified:   submodule_dir
+```
+
+`git diff` はこのよう
+
+```
+- Subproject commit 70d142c96846eba03404873823ca251c3c6be242
+- Subproject commit 49e9717de5f7293cb0aec4a42a31a3c595a39b19
+++Subproject commit 0000000000000000000000000000000000000000
+```
+
+解消方法
+```
+git reset branch_name -- submodule_dir
+git commit
+```
+
 ## ツール
 - [trailer](http://ptsochantaris.github.io/trailer/)
 
