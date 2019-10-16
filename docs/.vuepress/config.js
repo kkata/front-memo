@@ -18,6 +18,7 @@ module.exports = {
           '/tool/Mac環境構築',
           '/tool/Git',
           '/tool/Visual Studio Code',
+          '/tool/Local by Flywheel'
         ]
       }
     ],
