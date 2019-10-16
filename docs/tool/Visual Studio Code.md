@@ -24,6 +24,13 @@ VSCode上で `command + shifgt + p` を押して `shell command` と入れる
 
 ![](/tool.vscode2.png)
 
+### 括弧やタグ内を選択する
+ショートカットキーを変更  
+
+`control + w` の場合  
+![](/tool.vscode4.png)    
+![](/tool.vscode5.gif)  
+
 ### settings.jsonの開き方
 
 `command + ,` で設定のタブを開いて右側のアイコンから開ける
