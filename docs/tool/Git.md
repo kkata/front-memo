@@ -2,18 +2,24 @@
 
 ## 鍵作成
 
-```
+```sh
 $ mkdir ~/.ssh
 $ cd ~/.ssh
 $ ssh-keygen -t rsa
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
+鍵の名前を変えたい場合
+
+```sh
+$ ssh-keygen -t rsa -f hogehoge
+```
+
 ## submoduleのコンフリクト解消
 
 こうなった場合
 
-```
+```git
 Unmerged paths:
   (use "git add <file>..." to mark resolution)
 
@@ -22,14 +28,14 @@ Unmerged paths:
 
 `git diff` はこのよう
 
-```
+```git
 - Subproject commit 70d142c96846eba03404873823ca251c3c6be242
 - Subproject commit 49e9717de5f7293cb0aec4a42a31a3c595a39b19
 ++Subproject commit 0000000000000000000000000000000000000000
 ```
 
 解消方法
-```
+```git
 git reset branch_name -- submodule_dir
 git commit
 ```
