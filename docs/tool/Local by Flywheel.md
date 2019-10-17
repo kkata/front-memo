@@ -59,7 +59,7 @@ app/public/wp-content/themes/*
 最初のサイト作成時にマルチサイトを有効化する
 ![](/tool.flywheel1.png)
 
-### SSIで使う `virtual` が使用できない
+### インクルードに使う `virtual` が使用できない
 代わりに `readfile` を使う
 
 ```php
