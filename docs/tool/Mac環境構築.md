@@ -7,7 +7,7 @@
 
 - 隠しファイルや隠しフォルダを表示  
   `defaults write com.apple.finder AppleShowAllFiles -bool true`
-- .DS_Storeファイルを作らない  
+- .DS_Storeファイルを作らない（機能しないかも）  
   `defaults write com.apple.desktopservices DSDontWriteNetworkStores True`
 - Finder再起動  
   `killall Finder`

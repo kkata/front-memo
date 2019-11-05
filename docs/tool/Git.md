@@ -15,6 +15,24 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 $ ssh-keygen -t rsa -f hogehoge
 ```
 
+## ローカルでGitHubのFiles Changed
+
+[ローカルでGitHubのFiles Changed的な表示をする - Qiita](https://qiita.com/small-teton/items/c795f8eed822a27d02a4) 
+
+```sh
+# 派生元ブランチ名から分岐点となったコミットのハッシュ値を調べる
+$ git show-branch --merge-base (派生元ブランチ名) HEAD
+# 変更ファイルを列挙
+$ git diff --name-status (分岐元ハッシュ値) HEAD
+```
+
+### 差分を保存する  
+（調査中）
+
+```sh
+$ git archive HEAD `git diff --name-only (分岐元ハッシュ値) HEAD --diff-filter=d` -o ~/Downloads/archive.zip
+```
+
 ## submoduleのコンフリクト解消
 
 こうなった場合
@@ -40,7 +58,7 @@ git reset branch_name -- submodule_dir
 git commit
 ```
 
-## ツール
+## アプリ
 - [trailer](http://ptsochantaris.github.io/trailer/)
 
 ## 参考
