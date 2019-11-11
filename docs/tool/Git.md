@@ -33,6 +33,39 @@ $ git diff --name-status (分岐元ハッシュ値) HEAD
 $ git archive HEAD `git diff --name-only (分岐元ハッシュ値) HEAD --diff-filter=d` -o ~/Downloads/archive.zip
 ```
 
+#### `git archive`  でzipファイルを作成すると各ファイルに実行属性が付与される
+
+属性を維持する場合は `tar` で作成する
+
+```sh
+$ git archive HEAD `git diff --name-only (分岐元ハッシュ値) HEAD --diff-filter=d` -o ~/Downloads/archive.tar
+```
+
+[Git リポジトリの内容を zip ファイルにする - Qiita](https://qiita.com/usamik26/items/9a2d14aea30cb01a60c6)
+
+#### テキストファイルに記載したファイル一覧をコピーする
+
+`rsync` をつかう
+
+```sh
+$ cat /tmp/kopi_suru_yatsura.txt
+hoge.txt
+fuga.html
+piyo.js
+
+$ rsync -av --files-from=/tmp/kopi_suru_yatsura.txt /path/to/src /path/to/dest/
+```
+
+[テキストファイルに記載したファイルをコピーする | ハックノート](https://hacknote.jp/archives/28858/)
+
+#### ファイル数をカウントする
+
+`.` から始まるファイル名は除外してカウント
+
+```sh
+$ find . -type f ! -name ".*" | wc -l
+```
+
 ## submoduleのコンフリクト解消
 
 こうなった場合
