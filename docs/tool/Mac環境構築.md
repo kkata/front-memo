@@ -32,3 +32,4 @@
 - [wappalyzer](https://www.wappalyzer.com/)
 - [istatmenus](https://bjango.com/mac/istatmenus/)
 - [Clipy](https://clipy-app.com/)
+- [Keyboard Cleaner](http://jan.prima.de/~jan/plok/archives/48-Keyboard-Cleaner.html)
