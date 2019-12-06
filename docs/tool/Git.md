@@ -43,6 +43,16 @@ $ git archive HEAD `git diff --name-only (分岐元ハッシュ値) HEAD --diff-
 
 [Git リポジトリの内容を zip ファイルにする - Qiita](https://qiita.com/usamik26/items/9a2d14aea30cb01a60c6)
 
+#### ファイル一覧を取得する
+
+GithubのFiles changedページで、ブラウザのコンソールで以下。
+
+```
+[...document.querySelectorAll('.file-info>a')].map(x => x.title)
+```
+
+[GitHub の Pull Request の差分から変更されたファイル名一覧を抜き出す](https://mseeeen.msen.jp/extract-diff-file-names-from-github-pull-request/)
+
 #### テキストファイルに記載したファイル一覧をコピーする
 
 `rsync` をつかう
