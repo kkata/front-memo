@@ -15,6 +15,14 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 $ ssh-keygen -t rsa -f hogehoge
 ```
 
+## マージ済みのローカルブランチを削除
+
+develop, master, preview ブランチは除外。
+
+```sh
+$ git branch --merged|egrep -v '\*|develop|master|preview'|xargs git branch -d
+```
+
 ## ローカルでGitHubのFiles Changed
 
 [ローカルでGitHubのFiles Changed的な表示をする - Qiita](https://qiita.com/small-teton/items/c795f8eed822a27d02a4) 
