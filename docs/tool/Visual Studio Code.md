@@ -25,6 +25,18 @@ VSCode上で `command + shifgt + p` を押して `shell command` と入れる
 
 ![](/tool.vscode2.png)
 
+### EmmetをJSXでも使用する方法
+
+上記設定に加えて `settings.json`  に以下を追記
+
+```json
+{
+  "emmet.includeLanguages": {
+     "javascript": "javascriptreact"
+  }
+}
+```
+
 ### 括弧やタグ内を選択する
 ショートカットキーを変更  
 
@@ -60,7 +72,7 @@ VSCode上で `command + shifgt + p` を押して `shell command` と入れる
     "editor.wordWrap": "on",
     "files.insertFinalNewline": true,
     "editor.dragAndDrop": false,
-    "editor.autoIndent": false,
+    "editor.autoIndent": "none",
     "workbench.colorTheme": "Andromeda Bordered",
     "workbench.colorCustomizations": {
         "[Andromeda Bordered]": {
@@ -74,7 +86,13 @@ VSCode上で `command + shifgt + p` を押して `shell command` と入れる
         "files.trimTrailingWhitespace": false
     },
     "explorer.confirmDragAndDrop": false,
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.fontAliasing": "auto"
 }
 
 ```
