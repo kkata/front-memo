@@ -1,8 +1,5 @@
-
 module.exports = {
-  head: [
-    ['meta',{ name:"robots", content:"noindex, nofollow"}]
-  ],
+  head: [['meta', { name: 'robots', content: 'noindex, nofollow' }]],
   locales: {
     '/': {
       lang: 'ja',

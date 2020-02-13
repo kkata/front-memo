@@ -1,8 +1,9 @@
 # [Local by Flywheel](https://localbyflywheel.com/)
 
-WordPressのローカル環境を簡単に構築できる。
+WordPress のローカル環境を簡単に構築できる。
 
-## Git管理する場合
+## Git 管理する場合
+
 `.gitignore` の設定
 
 ```
@@ -53,13 +54,15 @@ app/public/wp-content/themes/*
 # wp-attach-dev/node_modules
 ```
 
-## 注意点 
+## 注意点
 
 ### マルチサイトの構築・設定は後からはできない
+
 最初のサイト作成時にマルチサイトを有効化する
 ![](/tool.flywheel1.png)
 
 ### インクルードに使う `virtual` が使用できない
+
 代わりに `readfile` を使う
 
 ```php

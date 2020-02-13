@@ -23,9 +23,9 @@ develop, master, preview ブランチは除外。
 $ git branch --merged|egrep -v '\*|develop|master|preview'|xargs git branch -d
 ```
 
-## ローカルでGitHubのFiles Changed
+## ローカルで GitHub の Files Changed
 
-[ローカルでGitHubのFiles Changed的な表示をする - Qiita](https://qiita.com/small-teton/items/c795f8eed822a27d02a4) 
+[ローカルで GitHub の Files Changed 的な表示をする - Qiita](https://qiita.com/small-teton/items/c795f8eed822a27d02a4)
 
 ```sh
 # 派生元ブランチ名から分岐点となったコミットのハッシュ値を調べる
@@ -34,14 +34,15 @@ $ git show-branch --merge-base (派生元ブランチ名) HEAD
 $ git diff --name-status (分岐元ハッシュ値) HEAD
 ```
 
-### 差分を保存する  
+### 差分を保存する
+
 （調査中）
 
 ```sh
 $ git archive HEAD `git diff --name-only (分岐元ハッシュ値) HEAD --diff-filter=d` -o ~/Downloads/archive.zip
 ```
 
-#### `git archive`  でzipファイルを作成すると各ファイルに実行属性が付与される
+#### `git archive` で zip ファイルを作成すると各ファイルに実行属性が付与される
 
 属性を維持する場合は `tar` で作成する
 
@@ -53,7 +54,7 @@ $ git archive HEAD `git diff --name-only (分岐元ハッシュ値) HEAD --diff-
 
 #### ファイル一覧を取得する
 
-GithubのFiles changedページで、ブラウザのコンソールで以下。
+Github の Files changed ページで、ブラウザのコンソールで以下。
 
 ```
 [...document.querySelectorAll('.file-info>a')].map(x => x.title)
@@ -84,7 +85,7 @@ $ rsync -av --files-from=/tmp/kopi_suru_yatsura.txt /path/to/src /path/to/dest/
 $ find . -type f ! -name ".*" | wc -l
 ```
 
-## submoduleのコンフリクト解消
+## submodule のコンフリクト解消
 
 こうなった場合
 
@@ -104,15 +105,17 @@ Unmerged paths:
 ```
 
 解消方法
+
 ```git
 git reset branch_name -- submodule_dir
 git commit
 ```
 
 ## アプリ
+
 - [trailer](http://ptsochantaris.github.io/trailer/)
 
 ## 参考
-- [GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~ - Qiita](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)
-- [Git submodule の基礎 - Qiita](
-https://qiita.com/sotarok/items/0d525e568a6088f6f6bb)
+
+- [GitHub で ssh 接続する手順~公開鍵・秘密鍵の生成から~ - Qiita](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)
+- [Git submodule の基礎 - Qiita](https://qiita.com/sotarok/items/0d525e568a6088f6f6bb)
