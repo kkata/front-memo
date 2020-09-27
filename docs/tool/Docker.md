@@ -68,3 +68,48 @@ server {
 }
 
 ```
+
+## WordPress 用の docker-compose.yml
+
+ディレクトリ構成
+
+```
+.
+├── db_data
+└── htdocs
+```
+
+docker-compose.yml
+
+```
+version: "3"
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./db_data:/var/lib/mysql
+    environment:
+      MYSQL_USER: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+
+  wp:
+    image: wordpress:latest
+    volumes:
+      - ./htdocs:/var/www/html
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: root
+      WORDPRESS_TABLE_PREFIX: "wp_"
+    working_dir: "/var/www/html"
+    restart: always
+volumes:
+  db_data: {}
+```
