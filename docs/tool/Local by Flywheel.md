@@ -1,5 +1,7 @@
 # [Local by Flywheel](https://localbyflywheel.com/)
 
+最新版は [Local](https://localwp.com/) 。Local by Flywheel より高速。
+
 WordPress のローカル環境を簡単に構築できる。
 
 ## Git 管理する場合
