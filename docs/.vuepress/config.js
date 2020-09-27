@@ -1,4 +1,5 @@
 module.exports = {
+  title: 'front memo',
   head: [['meta', { name: 'robots', content: 'noindex, nofollow' }]],
   locales: {
     '/': {
