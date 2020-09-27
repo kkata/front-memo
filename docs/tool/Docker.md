@@ -1,55 +1,70 @@
 # [Docker](https://www.docker.com/get-started)
 
-Docker で静的ページの検証環境をつくる。とりあえずローカルで確認するのに最低限の設定。
-
-nginx と PHP が必要なので、以下を利用  
-[trafex/alpine\-nginx\-php7 \- Docker Hub](https://hub.docker.com/r/trafex/alpine-nginx-php7/)
+Docker で静的ページ確認用のローカルサーバをたてる。nginx で SSI を使うだけの最低限の設定。
 
 ## docker-compose.yml
 
 ```yaml
-version: '3.7'
+version: '3'
 services:
   web:
-    image: trafex/alpine-nginx-php7
+    image: nginx:alpine
     ports:
-      - 80:8080
-      - 443:8443
+      - 8888:80
     privileged: true
     volumes:
-      - ./cert-key:/etc/nginx/ssl
-      - './nginx-server.conf:/etc/nginx/conf.d/server.conf'
-      - ./:/var/www/html
+      - './:/usr/share/nginx/html'
+      - './nginx-server.conf:/etc/nginx/conf.d/default.conf'
 ```
 
 ## nginx-server.conf
 
 ```
-ssi  on;
 server {
-    listen  8080;
-}
-server {
-    listen  8443 ssl;
+    listen       80;
+    server_name  localhost;
 
-    ssl_certificate /etc/nginx/ssl/localhost+1.pem;
-    ssl_certificate_key /etc/nginx/ssl/localhost+1-key.pem;
-    ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
 
     location / {
-        root /var/www/html;
+        root   /usr/share/nginx/html;
+        ssi  on;
+        ssi_last_modified on;
+        index  index.html index.htm;
     }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
 }
-```
 
-## SSL
-
-[mkcert](https://github.com/FiloSottile/mkcert) を使用。
-
-Homebrew でインストール。
-
-```bash
-$ brew install mkcert
-$ mkcert -install
-$ mkcert localhost 127.0.0.1
 ```
