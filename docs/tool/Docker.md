@@ -81,8 +81,8 @@ server {
 
 docker-compose.yml
 
-```
-version: "3"
+```yaml
+version: '3'
 
 services:
   db:
@@ -101,14 +101,14 @@ services:
     volumes:
       - ./htdocs:/var/www/html
     ports:
-      - "80:80"
+      - '80:80'
     depends_on:
       - db
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: root
-      WORDPRESS_TABLE_PREFIX: "wp_"
-    working_dir: "/var/www/html"
+      WORDPRESS_TABLE_PREFIX: 'wp_'
+    working_dir: '/var/www/html'
     restart: always
 volumes:
   db_data: {}
