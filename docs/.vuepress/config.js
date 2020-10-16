@@ -19,6 +19,11 @@ module.exports = {
           '/tool/Docker',
           '/tool/Local by Flywheel'
         ]
+      },
+      {
+        title: 'StravaAPI',
+        collapsable: false,
+        children: ['/StravaAPI/Strava']
       }
     ],
     displayAllHeaders: true,
