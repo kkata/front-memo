@@ -21,9 +21,9 @@ module.exports = {
         ]
       },
       {
-        title: 'StravaAPI',
+        title: 'API',
         collapsable: false,
-        children: ['/StravaAPI/Strava']
+        children: ['/API/Strava']
       }
     ],
     displayAllHeaders: true,

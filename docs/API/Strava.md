@@ -40,15 +40,15 @@ https://www.strava.com/oauth/authorize?client_id=[XXXXXXX]&response_type=code&re
 ```
 
 これをブラウザでアクセスすると以下の画面になる。
-![](/stravaAPI.strava1.png)
+![](/API.strava1.png)
 
 「許可する」をクリックすると、
 
-![](/stravaAPI.strava2.png)
+![](/API.strava2.png)
 
 になるので、code の値を控える。
 
-![](/stravaAPI.strava3.png)
+![](/API.strava3.png)
 
 `https://www.strava.com/api/v3/oauth/token` に以下のパラメータを付与してトークンを取得する。
 
@@ -60,7 +60,7 @@ https://www.strava.com/oauth/authorize?client_id=[XXXXXXX]&response_type=code&re
 client_id と client_secret はこれまでと同様。code は先ほど取得したもの。grant_type は `authorization_code` 。
 
 POST するとアクセストークンが得られる。
-![](/stravaAPI.strava4.png)
+![](/API.strava4.png)
 
 ## アスリート情報取得
 
@@ -81,10 +81,23 @@ https://www.strava.com/api/v3/activities/{id}
 ```
 
 アクティビティ ID は Strava の各アクティビティの URL から取得。  
-リクエストヘッダで `Authorization` キーにアクセストークン（`Bearer xxxxxxxxxxxx...`）を付与する。
+HTTP ヘッダーで `Authorization` キーにアクセストークン（`Bearer xxxxxxxxxxxx...`）を付与する。
 
-![](/stravaAPI.strava5.png)
+![](/API.strava5.png)
 
-## リフレッシュトークンの利用
+## リフレッシュトークンを使ったアクセストークンの再発行
 
-wip
+```
+https://www.strava.com/api/v3/oauth/token
+```
+
+に以下のパラメータを付与して POST。
+
+- client_id
+- client_secret
+- grant_type
+- refresh_token
+
+grant_type は `refresh_token` 。
+
+![](/API.strava6.png)
