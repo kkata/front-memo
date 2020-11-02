@@ -35,7 +35,7 @@ VSCode 上で `command + shifgt + p` を押して `shell command` と入れる
 
 ### Emmet を JSX でも使用する方法
 
-上記設定に加えて `settings.json` に以下を追記
+上記設定に加えて `settings.json` に~~以下を追記~~
 
 ```json
 {
@@ -44,6 +44,19 @@ VSCode 上で `command + shifgt + p` を押して `shell command` と入れる
   }
 }
 ```
+
+styled-components で css の Emmet 展開ができなかったので以下に変更。
+
+```json
+{
+  "emmet.includeLanguages": {
+    "javascript": "css"
+  }
+}
+```
+
+reference  
+[https://github.com/styled-components/vscode-styled-components/issues/72#issuecomment-439662986](https://github.com/styled-components/vscode-styled-components/issues/72#issuecomment-439662986)
 
 ### VSCode 上の TypeScript のバージョンをプロジェクトで使用しているバージョンと合わせる
 
