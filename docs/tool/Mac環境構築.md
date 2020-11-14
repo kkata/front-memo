@@ -39,4 +39,9 @@
 - [LICEcap](https://www.cockos.com/licecap/) - gif アニメーションのスクショをとる
 - [PixelSnap](https://getpixelsnap.com/) - 画面上のピクセル幅 x 高さを計測
 - [Quick Look plugins](https://github.com/sindresorhus/quick-look-plugins) - デフォルトでは見れないファイルもクイックルックで中身を確認できる
+
+## chrome 拡張
+
 - [wappalyzer](https://www.wappalyzer.com/) - Web サイトに使用されている技術を表示
+- [Codopen](https://chrome.google.com/webstore/detail/codopen/agnkphdgffianchpipdbkeaclfbobaak) - codepen のデバッグ用
+- [Pasty](https://chrome.google.com/webstore/detail/pasty/hdjihnnclpjhfdbbinmgoiehhoehhlgf) - コピペした複数の URL を一度に開く
