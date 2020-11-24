@@ -7,15 +7,16 @@
 - [andromeda](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda)
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Copy filename](https://marketplace.visualstudio.com/items?itemName=jack89ita.copy-filename)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [Indent 4-to-2](https://marketplace.visualstudio.com/items?itemName=Compulim.indent4to2)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
-- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [seti-icons](https://marketplace.visualstudio.com/items?itemName=qinjia.seti-icons)
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [VS Code Idiomatic CSS Comments](https://marketplace.visualstudio.com/items?itemName=ryanbelisle.vscode-idiomatic-css-comments)
 - [テキスト校正くん](https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading)
 
@@ -94,6 +95,7 @@ reference
   "files.exclude": {
     "**/node_modules": true
   },
+  "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
   "editor.minimap.enabled": false,
   "editor.fontFamily": "Ricty Diminished, Menlo, Monaco, 'Courier New', monospacesh",
   "editor.fontSize": 15,
@@ -107,7 +109,6 @@ reference
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
   "files.autoGuessEncoding": true,
-  "workbench.iconTheme": "seti",
   "editor.wordWrap": "on",
   "files.insertFinalNewline": true,
   "editor.dragAndDrop": false,
@@ -127,7 +128,7 @@ reference
   "explorer.confirmDragAndDrop": false,
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "css"
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -135,11 +136,14 @@ reference
   "diffEditor.ignoreTrimWhitespace": false,
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
-  "gitlens.advanced.telemetry.enabled": false,
   "japanese-proofreading.textlint.外来語カタカナ表記": false,
   "japanese-proofreading.textlint.技術用語": false,
   "japanese-proofreading.textlint.全角文字と半角文字の間": false,
   "editor.columnSelection": false,
-  "editor.multiCursorModifier": "ctrlCmd"
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.showWelcomeMessage": false,
+  "liveServer.settings.donotShowInfoMsg": true
 }
 ```
