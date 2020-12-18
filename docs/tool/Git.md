@@ -111,10 +111,6 @@ git reset branch_name -- submodule_dir
 git commit
 ```
 
-## アプリ
-
-- [trailer](http://ptsochantaris.github.io/trailer/)
-
 ## 参考
 
 - [GitHub で ssh 接続する手順~公開鍵・秘密鍵の生成から~ - Qiita](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)

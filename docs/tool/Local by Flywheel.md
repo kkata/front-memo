@@ -6,6 +6,8 @@ WordPress のローカル環境を簡単に構築できる。
 
 ## Git 管理する場合
 
+[Local](https://localwp.com/) だとまた異なるので注意
+
 `.gitignore` の設定
 
 ```

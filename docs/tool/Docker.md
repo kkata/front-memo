@@ -1,8 +1,10 @@
 # [Docker](https://www.docker.com/get-started)
 
-Docker で静的ページ確認用のローカルサーバをたてる。nginx で SSI を使うだけの最低限の設定。
+## Docker で静的ページ確認用のローカルサーバ
 
-## docker-compose.yml
+nginx で SSI を使うだけの最低限の設定。
+
+docker-compose.yml
 
 ```yaml
 version: '3'
@@ -17,7 +19,7 @@ services:
       - './nginx-server.conf:/etc/nginx/conf.d/default.conf'
 ```
 
-## nginx-server.conf
+nginx-server.conf
 
 ```
 server {

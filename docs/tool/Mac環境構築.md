@@ -34,13 +34,15 @@
 - [Clipy](https://clipy-app.com/) - クリップボードの履歴を保存
 - [duet](https://ja.duetdisplay.com/) - iPad を外部ディスプレイ化する
 - [Gapplin](http://gapplin.wolfrosch.com/) - SVG ビューワー
-- [istatmenus](https://bjango.com/mac/istatmenus/) - メニューバーに色々表示させる
-- [Keyboard Cleaner](http://jan.prima.de/~jan/plok/archives/48-Keyboard-Cleaner.html) - キーボード掃除用
+- [iStat Menus](https://bjango.com/mac/istatmenus/) - メニューバーに色々表示させる
+- [Stats](https://github.com/exelban/stats) - iStat Menus のようなアプリ（無料）
+- [Keyboard Cleaner](https://jan.prima.de/~jan/plok/archives/48-Keyboard-Cleaner.html) - キーボード掃除用
 - [LICEcap](https://www.cockos.com/licecap/) - gif アニメーションのスクショをとる
+- [Trailer](http://ptsochantaris.github.io/trailer/) - GitHub の情報をメニューバーに表示
 - [PixelSnap](https://getpixelsnap.com/) - 画面上のピクセル幅 x 高さを計測
 - [Quick Look plugins](https://github.com/sindresorhus/quick-look-plugins) - デフォルトでは見れないファイルもクイックルックで中身を確認できる
 
-## chrome 拡張
+## Chrome 拡張
 
 - [wappalyzer](https://www.wappalyzer.com/) - Web サイトに使用されている技術を表示
 - [Codopen](https://chrome.google.com/webstore/detail/codopen/agnkphdgffianchpipdbkeaclfbobaak) - codepen のデバッグ用

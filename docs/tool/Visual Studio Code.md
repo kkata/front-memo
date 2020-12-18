@@ -1,6 +1,9 @@
 # [Visual Studio Code](https://code.visualstudio.com/)
 
-[SettingSync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)を使っていたが、プラグインを大量に入れてたら動作が不安定になったので、使用休止。しばらく手動で最小限の設定で運用。
+デフォルトで設定同期機能が追加された  
+[Settings Sync in Visual Studio Code](https://code.visualstudio.com/docs/editor/settings-sync)
+
+~~[SettingSync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)を使っていたが、プラグインを大量に入れてたら動作が不安定になったので、使用休止。しばらく手動で最小限の設定で運用。~~
 
 ## 拡張
 
