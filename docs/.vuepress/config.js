@@ -17,6 +17,7 @@ module.exports = {
           '/tool/Git',
           '/tool/Visual Studio Code',
           '/tool/Docker',
+          '/tool/VirtualBox',
           '/tool/Local by Flywheel'
         ]
       },
