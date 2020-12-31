@@ -13,6 +13,7 @@
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Copy filename](https://marketplace.visualstudio.com/items?itemName=jack89ita.copy-filename)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Indent 4-to-2](https://marketplace.visualstudio.com/items?itemName=Compulim.indent4to2)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
@@ -83,6 +84,59 @@ reference
 ※Prettier とテキスト校正くんがうまく連携できていないかも。
 
 ![](/tool.vscode6.png)
+
+### ESLint と Prettier を使う
+
+#### 前提
+
+- VSCode に[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) と[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)がインストール済み
+- 保存時にフォーマット設定済み  
+  .vscode/settings.json
+  ```json
+  {
+    "editor.formatOnSave": true
+  }
+  ```
+- プロジェクトに ESLint と Prettier がインストール済み
+  ```bash
+  npm install -D eslint prettier
+  ```
+
+#### 設定
+
+`eslint-config-prettier` をインストール。
+
+```bash
+npm install -D eslint-config-prettier
+```
+
+.eslintrc.js の `extends` の最後に `prettier` を追記。
+
+```javascript
+module.exports = {
+  env: {
+    es6: true
+  },
+  extends: [
+    // 省略,
+    'prettier'
+  ]
+}
+```
+
+Prettier の設定を記述  
+`.prettierrc.json`
+
+```json
+{
+  "semi": false,
+  "singleQuote": true
+}
+```
+
+- [prettier/eslint\-config\-prettier: Turns off all rules that are unnecessary or might conflict with Prettier\.](https://github.com/prettier/eslint-config-prettier)
+- [Configuration File · Prettier](https://prettier.io/docs/en/configuration.html)
+- [VS Code で ESLint × Prettier のベストかも知れないプラクティス \- Qiita](https://qiita.com/iShinkai/items/6f65b042618b76525659)
 
 ### settings.json の開き方
 
