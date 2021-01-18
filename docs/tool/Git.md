@@ -111,6 +111,24 @@ git reset branch_name -- submodule_dir
 git commit
 ```
 
+## パーミッションが 100644 → 100755 になった時の戻し方
+
+たまになる
+
+```bash
+find 対象のディレクトリのパス -type f | xargs chmod -x
+```
+
+.git/config
+
+```
+[core]
+  filemode = false
+```
+
+- [\[how to revert 100644 → 100755 commits ?\] \#git \#chmod](https://gist.github.com/liitfr/86c77bf0ea4a627ab9b62ad30c32c251)
+- [msysgit でファイルを変更していないはずなのに merge できない場合の対処 \- \.\.たれろぐ\.\.](https://naga-sawa.hatenadiary.org/entry/20101220/1292806729)
+
 ## 参考
 
 - [GitHub で ssh 接続する手順~公開鍵・秘密鍵の生成から~ - Qiita](https://qiita.com/shizuma/items/2b2f873a0034839e47ce)
