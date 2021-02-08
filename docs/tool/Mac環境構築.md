@@ -26,6 +26,10 @@
   システム環境設定 > キーボード > “キーボード”タブ > “修飾キー...”ボタン
   ![](/tool.keyboad3.png)
 
+- トラックパッドをタップでドラッグできるようにする  
+  システム環境設定 > アクセシビリティ > マウスとトラックパッド ＞  トラックパッドオプション
+  ![](/tool.trackpad.png)
+
 ## アプリ
 
 - [Annotate](https://apps.apple.com/jp/app/annotate-capture-and-share/id918207447) - シンプルなスクショアプリ
