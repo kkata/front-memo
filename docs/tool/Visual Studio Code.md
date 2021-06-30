@@ -14,10 +14,13 @@
 - [Copy filename](https://marketplace.visualstudio.com/items?itemName=jack89ita.copy-filename)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 - [Indent 4-to-2](https://marketplace.visualstudio.com/items?itemName=Compulim.indent4to2)
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
@@ -76,6 +79,12 @@ reference
 `control + w` の場合  
 ![](/tool.vscode4.png)  
 ![](/tool.vscode5.gif)
+
+### カーソル行／選択行をまるっと移動（複数行対応）
+
+`Alt + ↑/↓`
+
+![](/tool.vscode9.gif)
 
 ### VSCode 上で保存時にフォーマッターを利用する
 
