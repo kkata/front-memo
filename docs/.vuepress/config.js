@@ -14,6 +14,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/tool/Mac環境構築',
+          '/tool/Chrome',
           '/tool/Git',
           '/tool/Visual Studio Code',
           '/tool/Docker',
