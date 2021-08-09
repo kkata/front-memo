@@ -25,6 +25,7 @@
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [VS Code Idiomatic CSS Comments](https://marketplace.visualstudio.com/items?itemName=ryanbelisle.vscode-idiomatic-css-comments)
+- [vscode\-styled\-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 - [テキスト校正くん](https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading)
 
 ## 設定
@@ -85,6 +86,12 @@ reference
 `Alt + ↑/↓`
 
 ![](/tool.vscode9.gif)
+
+### styled-components で補完とシンタックスハイライト
+
+以下の拡張をインストールする
+
+[vscode\-styled\-components \- Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
 ### VSCode 上で保存時にフォーマッターを利用する
 
@@ -163,8 +170,8 @@ Prettier の設定を記述
   },
   "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
   "editor.minimap.enabled": false,
-  "editor.fontFamily": "Ricty Diminished, Menlo, Monaco, 'Courier New', monospacesh",
-  "editor.fontSize": 15,
+  "editor.fontFamily": "VL ゴシック, Menlo, Monaco, 'Courier New', monospacesh",
+  "editor.fontSize": 16,
   "editor.renderWhitespace": "none",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
@@ -173,20 +180,19 @@ Prettier の設定を記述
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.drawBoldTextInBrightColors": false,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 16,
   "files.autoGuessEncoding": true,
   "editor.wordWrap": "on",
   "files.insertFinalNewline": true,
   "editor.dragAndDrop": false,
   "editor.autoIndent": "brackets",
-  "workbench.colorTheme": "Andromeda Bordered",
+  "workbench.colorTheme": "Andromeda",
   "workbench.colorCustomizations": {
     "[Andromeda Bordered]": {
       "editor.selectionHighlightBackground": "#ffff0070",
       "editor.selectionBackground": "#00ff0040"
     }
   },
-  "breadcrumbs.enabled": false,
   "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "files.trimTrailingWhitespace": false
@@ -205,11 +211,18 @@ Prettier の設定を記述
   "japanese-proofreading.textlint.外来語カタカナ表記": false,
   "japanese-proofreading.textlint.技術用語": false,
   "japanese-proofreading.textlint.全角文字と半角文字の間": false,
-  "editor.columnSelection": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.tabSize": 2,
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.showWelcomeMessage": false,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "terminal.integrated.fontFamily": "Ricty Diminished for Powerline",
+  "debug.console.fontSize": 13,
+  "extensions.ignoreRecommendations": true,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "markuplint.enable": false
 }
 ```
