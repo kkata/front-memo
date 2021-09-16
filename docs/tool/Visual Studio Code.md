@@ -7,21 +7,25 @@
 
 ## 拡張
 
-- [andromeda](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda)
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Copy filename](https://marketplace.visualstudio.com/items?itemName=jack89ita.copy-filename)
+- [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 - [Indent 4-to-2](https://marketplace.visualstudio.com/items?itemName=Compulim.indent4to2)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 - [Indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
+- [Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [SCSS Everywhere](https://marketplace.visualstudio.com/items?itemName=gencer.html-slim-scss-css-class-completion)
+- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+- [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [VS Code Idiomatic CSS Comments](https://marketplace.visualstudio.com/items?itemName=ryanbelisle.vscode-idiomatic-css-comments)
@@ -91,7 +95,7 @@ reference
 
 以下の拡張をインストールする
 
-[vscode\-styled\-components \- Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+[vscode\-styled\-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
 ### VSCode 上で保存時にフォーマッターを利用する
 
@@ -186,7 +190,7 @@ Prettier の設定を記述
   "files.insertFinalNewline": true,
   "editor.dragAndDrop": false,
   "editor.autoIndent": "brackets",
-  "workbench.colorTheme": "Andromeda",
+  "workbench.colorTheme": "Dracula Soft",
   "workbench.colorCustomizations": {
     "[Andromeda Bordered]": {
       "editor.selectionHighlightBackground": "#ffff0070",
@@ -223,6 +227,8 @@ Prettier の設定を記述
   "debug.console.fontSize": 13,
   "extensions.ignoreRecommendations": true,
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "markuplint.enable": false
+  "markuplint.enable": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnSave": true
 }
 ```
