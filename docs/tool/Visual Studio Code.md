@@ -18,7 +18,6 @@
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-- [Indenticator](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
 - [Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
@@ -34,11 +33,13 @@
 
 ## 設定
 
-### ターミナルから VSCode でファイルを開く
+### ターミナルから VSCode でファイルを開けるようにする
 
 VSCode 上で `command + shifgt + p` を押して `shell command` と入れる
 
 ![](/tool.vscode1.png)
+
+`code` というコマンドで開けるようになる
 
 ### Emmet で展開がショートカットキーでできない場合
 
@@ -174,8 +175,8 @@ Prettier の設定を記述
   },
   "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
   "editor.minimap.enabled": false,
-  "editor.fontFamily": "VL ゴシック, Menlo, Monaco, 'Courier New', monospacesh",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "PlemolJP Console NF, VL ゴシック, Menlo, Monaco, 'Courier New', monospacesh",
+  "editor.fontSize": 17,
   "editor.renderWhitespace": "none",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
@@ -223,12 +224,14 @@ Prettier の設定を記述
   "files.associations": {
     "*.vue": "vue"
   },
-  "terminal.integrated.fontFamily": "Ricty Diminished for Powerline",
+  "terminal.integrated.fontFamily": "PlemolJP Console NF",
   "debug.console.fontSize": 13,
   "extensions.ignoreRecommendations": true,
   "security.workspace.trust.untrustedFiles": "newWindow",
   "markuplint.enable": false,
   "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "terminal.integrated.letterSpacing": 1,
+  "editor.guides.bracketPairs": true
 }
 ```
