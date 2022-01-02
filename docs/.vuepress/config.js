@@ -13,13 +13,13 @@ module.exports = {
         title: 'ツール',
         collapsable: false,
         children: [
-          '/tool/Mac環境構築',
+          '/tool/MacSetting',
           '/tool/Chrome',
           '/tool/Git',
-          '/tool/Visual Studio Code',
+          '/tool/VisualStudioCode',
           '/tool/Docker',
           '/tool/VirtualBox',
-          '/tool/Local by Flywheel'
+          '/tool/LocalbyFlywheel'
         ]
       },
       {
