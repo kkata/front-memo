@@ -11,7 +11,6 @@ module.exports = {
     sidebar: [
       {
         title: 'ツール',
-        collapsable: false,
         children: [
           '/tool/MacSetting',
           '/tool/Chrome',
@@ -24,11 +23,9 @@ module.exports = {
       },
       {
         title: 'API',
-        collapsable: false,
         children: ['/API/Strava']
       }
     ],
-    displayAllHeaders: true,
     sidebarDepth: 2
   }
 }
