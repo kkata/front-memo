@@ -26,6 +26,11 @@ module.exports = {
         title: 'API',
         collapsable: false,
         children: ['/API/Strava']
+      },
+      {
+        title: 'JavaScript',
+        collapsable: false,
+        children: ['/JavaScript/UI']
       }
     ],
     displayAllHeaders: true,
