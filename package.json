@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "vuepress": "^1.8.2"
-  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -15,5 +12,8 @@
     "url": "git+https://github.com/kkata/front-memo.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.32"
+  }
 }
