@@ -5,7 +5,6 @@
 ## Animation
 
 - [bnthor/animon: Animate DOM elements when the appear in the viewport](https://github.com/bnthor/animon)
-- [ingram-projects/animxyz: The first truly composable CSS animation library. Built for Vue, React, SCSS, and CSS, AnimXYZ will bring your website to life.](https://github.com/ingram-projects/animxyz)
 - [tipsy/bubbly-bg: Beautiful bubbly backgrounds in less than 1kB (750 bytes gzipped)](https://github.com/tipsy/bubbly-bg)
 
 ## Lazyload
@@ -40,11 +39,13 @@
 - [hsnaydd/moveTo: A lightweight scroll animation javascript library without any dependency](https://github.com/hsnaydd/moveTo)
 - [janpaepke/ScrollMagic: The javascript library for magical scroll interactions.](https://github.com/janpaepke/ScrollMagic)
 - [dixonandmoe/rellax: Lightweight, vanilla javascript parallax library](https://github.com/dixonandmoe/rellax)
+- [ingram-projects/animxyz: The first truly composable CSS animation library. Built for Vue, React, SCSS, and CSS, AnimXYZ will bring your website to life.](https://github.com/ingram-projects/animxyz)
+- [electerious/basicScroll: Standalone parallax scrolling for mobile and desktop with CSS variables.](https://github.com/electerious/basicScroll)
 
 ## Tooltip
 
 - [atomiks/tippyjs: Tooltip, popover, dropdown, and menu library](https://github.com/atomiks/tippyjs)
 
-## Other
+## A11y
 
 - [ten1seven/what-input: A global utility for tracking the current input method (mouse/pointer, keyboard or touch).](https://github.com/ten1seven/what-input)
