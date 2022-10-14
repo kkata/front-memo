@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.9.7"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
