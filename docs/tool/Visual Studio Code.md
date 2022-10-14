@@ -13,22 +13,18 @@
 - [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-- [Indent 4-to-2](https://marketplace.visualstudio.com/items?itemName=Compulim.indent4to2)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-- [Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)
+- [Indent 4-to-2](https://marketplace.visualstudio.com/items?itemName=Compulim.indent4to2)
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [SCSS Everywhere](https://marketplace.visualstudio.com/items?itemName=gencer.html-slim-scss-css-class-completion)
 - [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-- [VS Code Idiomatic CSS Comments](https://marketplace.visualstudio.com/items?itemName=ryanbelisle.vscode-idiomatic-css-comments)
-- [vscode\-styled\-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 - [テキスト校正くん](https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading)
 
 ## 設定
@@ -169,69 +165,78 @@ Prettier の設定を記述
 
 ```json
 {
-  "workbench.startupEditor": "newUntitledFile",
-  "files.exclude": {
-    "**/node_modules": true
-  },
-  "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
-  "editor.minimap.enabled": false,
-  "editor.fontFamily": "PlemolJP Console NF, VL ゴシック, Menlo, Monaco, 'Courier New', monospacesh",
-  "editor.fontSize": 17,
-  "editor.renderWhitespace": "none",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.drawBoldTextInBrightColors": false,
-  "terminal.integrated.fontSize": 16,
-  "files.autoGuessEncoding": true,
-  "editor.wordWrap": "on",
-  "files.insertFinalNewline": true,
-  "editor.dragAndDrop": false,
-  "editor.autoIndent": "brackets",
-  "workbench.colorTheme": "Dracula Soft",
-  "workbench.colorCustomizations": {
-    "[Andromeda Bordered]": {
-      "editor.selectionHighlightBackground": "#ffff0070",
-      "editor.selectionBackground": "#00ff0040"
-    }
-  },
-  "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
-  "explorer.confirmDragAndDrop": false,
-  "emmet.triggerExpansionOnTab": true,
+  "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
+  "debug.console.fontSize": 13,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "editor.autoIndent": "brackets",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "PlemolJP Console NF, VL ゴシック, Menlo, Monaco, 'Courier New', monospacesh",
+  "editor.fontSize": 17,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "none",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "javascript": "css"
   },
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.fontAliasing": "auto",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
-  "japanese-proofreading.textlint.外来語カタカナ表記": false,
-  "japanese-proofreading.textlint.技術用語": false,
-  "japanese-proofreading.textlint.全角文字と半角文字の間": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.tabSize": 2,
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.showWelcomeMessage": false,
-  "liveServer.settings.donotShowInfoMsg": true,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.vue": "vue"
   },
-  "terminal.integrated.fontFamily": "PlemolJP Console NF",
-  "debug.console.fontSize": 13,
-  "extensions.ignoreRecommendations": true,
+  "files.autoGuessEncoding": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
+    "typescript": true,
+    "yaml": false
+  },
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "japanese-proofreading.textlint.全角文字と半角文字の間": false,
+  "japanese-proofreading.textlint.外来語カタカナ表記": false,
+  "japanese-proofreading.textlint.技術用語": false,
+  "material-icon-theme.showWelcomeMessage": false,
   "security.workspace.trust.untrustedFiles": "newWindow",
-  "markuplint.enable": false,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnSave": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.fontFamily": "PlemolJP Console NF",
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.letterSpacing": 1,
-  "editor.guides.bracketPairs": true
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorCustomizations": {
+    "[Andromeda Bordered]": {
+      "editor.selectionBackground": "#00ff0040",
+      "editor.selectionHighlightBackground": "#ffff0070"
+    }
+  },
+  "workbench.colorTheme": "Dracula Soft",
+  "workbench.fontAliasing": "auto",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile"
 }
 ```
