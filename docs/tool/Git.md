@@ -15,6 +15,22 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 $ ssh-keygen -t rsa -f hogehoge
 ```
 
+任意のファイル名にした場合、`.ssh/config` ファイルを作る
+
+```
+# GitHub SSH key
+Host github
+  HostName github.com
+  IdentityFile ~/.ssh/ファイル名
+  User git
+```
+
+接続確認
+
+```sh
+$ ssh -T git@github.com
+```
+
 ## マージ済みのローカルブランチを削除
 
 develop, master, preview ブランチは除外。
